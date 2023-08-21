@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Hardik's Portfolio',
+  name: 'Portfolio - Hardik More',
   domain: 'portfolio.hardikmore.com',
   author: 'Hardik More',
 
@@ -50,16 +50,16 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: '8f3c962e78794c6ca7059b53b9409b75'
+    },
+    {
+      title: 'Connect',
+      pageId: '1afb57d9fdd24a1086e2222a54b2cb6f'
+    }
+  ]
 })
