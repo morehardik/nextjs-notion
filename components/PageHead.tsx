@@ -35,15 +35,22 @@ export const PageHead: React.FC<
       <meta name='robots' content='index,follow' />
       <meta property='og:type' content='website' />
 
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-S959M47YF6"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-S959M47YF6');
-      </script>
+      <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=UA-CODE`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-CODE', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
 
       {site && (
         <>
