@@ -37,7 +37,7 @@ export const PageHead: React.FC<
 
       <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-CODE`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-S959M47YF6`}
           />
           <script
             dangerouslySetInnerHTML={{
@@ -45,7 +45,7 @@ export const PageHead: React.FC<
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-CODE', {
+            gtag('config', 'G-S959M47YF6', {
               page_path: window.location.pathname,
             });
           `,
